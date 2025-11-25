@@ -21,7 +21,7 @@ app.get('/animals/:id', (req, res) => {
   try {
     const animal = db.prepare('SELECT * FROM animals WHERE id = ?').get(req.params.id);
     if (!animal) {
-      return res.status(404).json({ error: 'Elainta ei loytynyt' });
+      return res.status(404).json({ error: 'Eläintä ei löytynyt' });
     }
     res.json(animal);
   } catch (error) {
@@ -30,5 +30,5 @@ app.get('/animals/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server A kaynnissa portissa ${PORT}`);
+  console.log(`Server A käynnissä portissa ${PORT}`);
 });

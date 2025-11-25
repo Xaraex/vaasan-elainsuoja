@@ -25,12 +25,12 @@ if (count.count === 0) {
   `);
 
   const animals = [
-    ['Luna', 'kissa', 3, 'Eurooppalainen lyhytkarva', 'Rauhallinen ja hella kissa, joka rakastaa sylissa olemista.', 'https://placekitten.com/400/300', 'available'],
-    ['Max', 'koira', 5, 'Labradorinnoutaja', 'Energinen ja leikkisa koira, sopii aktiiviseen perheeseen.', 'https://placedog.net/400/300', 'available'],
-    ['Miro', 'kissa', 1, 'Ragdoll', 'Leikkisa pentu, tulee toimeen muiden elainten kanssa.', 'https://placekitten.com/401/300', 'available'],
-    ['Bella', 'koira', 2, 'Saksanpaimenkoira', 'Alykas ja uskollinen, tarvitsee kokeneen omistajan.', 'https://placedog.net/401/300', 'available'],
+    ['Luna', 'kissa', 3, 'Eurooppalainen lyhytkarva', 'Rauhallinen ja hellä kissa, joka rakastaa sylissä olemista.', 'https://placekitten.com/400/300', 'available'],
+    ['Max', 'koira', 5, 'Labradorinnoutaja', 'Energinen ja leikkisä koira, sopii aktiiviseen perheeseen.', 'https://placedog.net/400/300', 'available'],
+    ['Miro', 'kissa', 1, 'Ragdoll', 'Leikkisä pentu, tulee toimeen muiden eläinten kanssa.', 'https://placekitten.com/401/300', 'available'],
+    ['Bella', 'koira', 2, 'Saksanpaimenkoira', 'Älykäs ja uskollinen, tarvitsee kokeneen omistajan.', 'https://placedog.net/401/300', 'available'],
     ['Viivi', 'kissa', 7, 'Persialainen', 'Rauhallinen seniorikissa, sopii rauhalliseen kotiin.', 'https://placekitten.com/402/300', 'available'],
-    ['Rocky', 'koira', 4, 'Bulldog', 'Ystavallinen ja rauhallinen, rakastaa lapsia.', 'https://placedog.net/402/300', 'available']
+    ['Rocky', 'koira', 4, 'Bulldog', 'Ystävällinen ja rauhallinen, rakastaa lapsia.', 'https://placedog.net/402/300', 'available']
   ];
 
   animals.forEach(animal => insert.run(...animal));
