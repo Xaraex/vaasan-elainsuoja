@@ -1,0 +1,218 @@
+.animal-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.animal-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.animal-image {
+  height: 100%;
+  min-height: 400px;
+}
+
+.animal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animal-info-section {
+  padding: 2rem;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.status-tag.available {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-tag.pending {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.animal-info-section h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.info-item .label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+
+.info-item .value {
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.description h3 {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.adopt-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.adopt-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.unavailable-message {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff3e0;
+  border-radius: 10px;
+  color: #ef6c00;
+  text-align: center;
+}
+
+.adoption-form-container {
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.adoption-form-container h2 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+}
+
+.adoption-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.adoption-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.adoption-form input,
+.adoption-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.adoption-form input:focus,
+.adoption-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancel-button {
+  flex: 1;
+  padding: 1rem;
+  background: #f5f5f5;
+  color: #666;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-button:hover {
+  background: #e0e0e0;
+}
+
+.submit-button {
+  flex: 2;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .animal-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-image {
+    min-height: 300px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
