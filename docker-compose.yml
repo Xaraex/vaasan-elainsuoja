@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  server-a:
+    build: ./server-a
+    container_name: elainsuoja-server-a
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - SERVER_B_URL=http://server-b:3002
+    depends_on:
+      - server-b
+    volumes:
+      - server-a-data:/app/data
+    networks:
+      - elainsuoja-network
+
+  server-b:
+    build: ./server-b
+    container_name: elainsuoja-server-b
+    ports:
+      - "3002:3002"
+    environment:
+      - PORT=3002
+    volumes:
+      - server-b-data:/app/data
+    networks:
+      - elainsuoja-network
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=http://localhost:3001
+    container_name: elainsuoja-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - server-a
+    networks:
+      - elainsuoja-network
+
+networks:
+  elainsuoja-network:
+    driver: bridge
+
+volumes:
+  server-a-data:
+  server-b-data:
