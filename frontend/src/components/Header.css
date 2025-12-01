@@ -6,11 +6,12 @@
 }
 
 .header-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -55,5 +56,11 @@
 @media (max-width: 480px) {
   .logo {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-content {
+    max-width: 1600px;
   }
 }

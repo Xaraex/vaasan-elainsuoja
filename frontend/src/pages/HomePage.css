@@ -1,7 +1,7 @@
 .home-page {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 .hero {
@@ -46,8 +46,9 @@
 
 .animals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
   gap: 2rem;
+  justify-content: center;
 }
 
 .loading, .error, .no-animals {
@@ -101,5 +102,21 @@
   .filter-buttons button {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .animals-grid {
+    grid-template-columns: repeat(3, 350px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-page {
+    max-width: 1600px;
+  }
+
+  .animals-grid {
+    grid-template-columns: repeat(4, 350px);
   }
 }
