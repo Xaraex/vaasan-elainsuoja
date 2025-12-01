@@ -13,7 +13,7 @@
 
 .card-image {
   position: relative;
-  height: 200px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -116,5 +116,38 @@
   .status-badge {
     font-size: 0.7rem;
     padding: 0.2rem 0.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-image {
+    height: 240px;
+  }
+
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-image {
+    height: 280px;
+  }
+
+  .card-content {
+    padding: 1.8rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .animal-breed {
+    font-size: 1rem;
+  }
+
+  .view-button {
+    padding: 0.8rem 2rem;
+    font-size: 1.05rem;
   }
 }

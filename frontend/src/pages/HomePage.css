@@ -46,9 +46,8 @@
 
 .animals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  justify-content: center;
 }
 
 .loading, .error, .no-animals {
@@ -89,8 +88,14 @@
   }
 
   .animals-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .animals-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -105,18 +110,28 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .animals-grid {
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .home-page {
     max-width: 1600px;
+    padding: 2rem 4rem;
   }
 
   .animals-grid {
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
   }
 }
