@@ -59,3 +59,47 @@
 .error {
   color: #e74c3c;
 }
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .animals-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-buttons button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

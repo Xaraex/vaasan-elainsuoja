@@ -204,15 +204,101 @@
 }
 
 @media (max-width: 768px) {
+  .animal-page {
+    padding: 1rem;
+  }
+
   .animal-detail {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .animal-image {
-    min-height: 300px;
+    min-height: 250px;
+  }
+
+  .animal-info-section {
+    padding: 1.5rem;
+  }
+
+  .animal-info-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .info-item {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .adopt-button {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+
+  .adoption-form-container {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .submit-button {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .animal-image {
+    min-height: 200px;
+  }
+
+  .animal-info-section {
+    padding: 1rem;
+  }
+
+  .animal-info-section h1 {
+    font-size: 1.5rem;
   }
 
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .info-item .label {
+    margin-bottom: 0;
+  }
+
+  .status-tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .adoption-form-container {
+    padding: 1rem;
+  }
+
+  .adoption-form-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .adoption-form input,
+  .adoption-form textarea {
+    padding: 0.7rem;
+    font-size: 16px; /* Prevents zoom on iOS */
   }
 }

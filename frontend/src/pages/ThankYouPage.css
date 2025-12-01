@@ -77,3 +77,57 @@
 .back-button:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .thank-you-page {
+    padding: 1rem;
+    min-height: calc(100vh - 100px);
+  }
+
+  .thank-you-card {
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .thank-you-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .personalized-message {
+    font-size: 1rem;
+  }
+
+  .next-steps {
+    padding: 1rem;
+  }
+
+  .back-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .back-button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you-card {
+    padding: 1.5rem;
+  }
+
+  .thank-you-card h1 {
+    font-size: 1.3rem;
+  }
+
+  .next-steps ul {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+}

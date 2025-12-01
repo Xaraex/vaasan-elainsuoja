@@ -80,8 +80,8 @@ function AnimalPage() {
   if (!animal) return <div className="error">Eläintä ei löytynyt</div>;
 
   const placeholderImage = animal.type === 'kissa'
-    ? 'https://placekitten.com/600/400'
-    : 'https://placedog.net/600/400';
+    ? 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=400&fit=crop'
+    : 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=600&h=400&fit=crop';
 
   return (
     <div className="animal-page">

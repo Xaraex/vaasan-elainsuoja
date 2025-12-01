@@ -31,3 +31,29 @@
 .header nav a:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .header nav a {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+}

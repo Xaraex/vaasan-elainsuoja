@@ -3,8 +3,8 @@ import './AnimalCard.css';
 
 function AnimalCard({ animal }) {
   const placeholderImage = animal.type === 'kissa'
-    ? 'https://placekitten.com/400/300'
-    : 'https://placedog.net/400/300';
+    ? 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop'
+    : 'https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop';
 
   return (
     <div className="animal-card">

@@ -79,3 +79,42 @@
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
+
+@media (max-width: 768px) {
+  .animal-card:hover {
+    transform: none;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .view-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+
+  .view-button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image {
+    height: 160px;
+  }
+
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
